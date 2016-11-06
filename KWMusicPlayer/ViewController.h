@@ -15,12 +15,16 @@
     AVAudioPlayer *myAudioPlayer;
     BOOL isPlaying;
     MPMediaLibrary *nowPlaying;
+    
+    NSTimer *timer;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 - (IBAction)playPauseAction:(id)sender;
 - (IBAction)stopAction:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UISlider *durationSlider;
 
 
 @end
